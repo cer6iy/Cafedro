@@ -1,0 +1,12 @@
+{
+    "port": 8080,
+    "mongoose": {
+        "uri": "mongodb://localhost:27017/prepods"
+    },
+    "dev": {
+        "mongoose": {
+            "uri": "mongodb://localhost:27017/prepods"
+        },
+        "port": 3000
+    }
+}

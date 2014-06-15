@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>load - необходим вход</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link href="/css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+    <!--Navigation-->
+    <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" data-toggle="modal" data-target="#about">#load</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+                                class="glyphicon glyphicon-th-large"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" data-toggle="modal" data-target="#about">Справка</a></li>
+                        <li><a href="/feedback">Обратная связь</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="jumbotron">
+
+        <p>Введите логин и пароль:</p>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <form class="clearfix" id="login-form">
+
+                    <div class="form-group">
+                        <input type="email" placeholder="логин" class="form-control" id="username">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="пароль" class="form-control" id="password">
+                    </div>
+                    <div class="form-group">
+                        <input class="btn" type="submit" id="login" value="Войти">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modals -->
+
+<!--New event modal-->
+<div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Немного подробнее о сервисе #load </h4>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <p> Это наш супер сервис</p>
+            </div>
+            <!-- /Modal body -->
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Ок</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="newEvenSuccesstModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Событие успешно создано</h4>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <p>Поделитесь им с друзьями и начните помогать</p>
+
+                <p>Ссылка на событие: <a href="#" id="eventPath">перейти</a></p>
+            </div>
+            <!-- /Modal body -->
+
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/lib/js/jquery.min.js"></script>
+<script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
